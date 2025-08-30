@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 min-h-screen p-0 flex flex-col">
+    <nav>
+      <div class="bg-gray-600 br- max-w-screen text-2xl flex justify-around">
+        <a class="text-white blur-none p-3" href="index.html">Home</a>
+        <a class="text-white blur-none p-3" href="quiz.html">Quiz</a>
+        <a class="text-white blur-none p-3" href="login.html">Sign up/Login</a>
+      </div>
+    </nav>
+
+    <div class="mt-60 grid grid-cols-12 overflow-x-hidden bg-gray-900">
+      <div
+        id="card-1"
+        class="mr-3 sm:col-span-4 col-span-6 flex items-center text-center justify-center flex-col bg-gray-50 rounded-lg hover:bg-red-200 transition delay-75 duration-500"
+      >
+        <h2 class="font-bold text-red-600">Nike Red</h2>
+        <p>
+          Step into bold style with these vibrant red and white Nike sneakers,
+          designed to make a powerful statement everywhere you go.
+        </p>
+        <img
+          class="ml-1 br-sm rounded-md w-70 object-contain"
+          src="/Images/ChatGPT Image Aug 30, 2025, 07_01_25 PM.png"
+          alt="Nike Red"
+        />
+        <button
+          data-price="99.99"
+          class="text-white mb-2 transition add-to-cart delay-75 duration-500 ring-3 hover:ring-red-500 hover:bg-gray-900 mt-2 p-1 w-50 bg-gray-800 rounded-sm"
+        >
+          Add to cart
+        </button>
+        <h2 class="font-bold">Price:$99.99</h2>
+      </div>
+
+      <div
+        id="card-2"
+        class="mr-3 col-span-6 sm:col-span-4 flex items-center text-center justify-center flex-col bg-gray-50 rounded-lg hover:bg-blue-200 transition delay-75 duration-500"
+      >
+        <h2 class="font-bold text-blue-600">Nike Blue</h2>
+        <p>
+          Elevate your game with these cool blue and white Nike sneakers,
+          blending sleek design with ultimate performance.
+        </p>
+        <img
+          class="ml-1 br-sm rounded-md w-70 object-contain"
+          src="/Images/ChatGPT Image Aug 30, 2025, 07_01_42 PM.png"
+          alt="Nike Blue"
+        />
+        <button
+          data-price="85.99"
+          class="text-white add-to-cart mb-2 transition delay-75 duration-500 ring-3 hover:ring-blue-500 hover:bg-gray-900 mt-2 p-1 w-50 bg-gray-800 rounded-sm"
+        >
+          Add to cart
+        </button>
+        <h2 class="font-bold">Price:$85.99</h2>
+      </div>
+
+      <div
+        id="card-3"
+        class="mr-3 col-span-6 sm:col-span-4 flex items-center text-center justify-center flex-col bg-gray-50 rounded-lg hover:bg-green-200 transition delay-75 duration-500"
+      >
+        <h2 class="font-bold text-green-600">Nike Green</h2>
+        <p>
+          Stand out with these fresh green and white Nike sneakers, made for
+          those who love unique style with a sporty edge.
+        </p>
+        <img
+          class="ml-1 br-sm rounded-md w-70 object-contain"
+          src="/Images/ChatGPT Image Aug 30, 2025, 07_01_45 PM.png"
+          alt="Nike Green"
+        />
+        <button
+          data-price="79.99"
+          class="text-white mb-2 add-to-cart transition delay-75 duration-500 ring-3 hover:ring-green-500 hover:bg-gray-900 mt-2 p-1 w-50 bg-gray-800 rounded-sm"
+        >
+          Add to cart
+        </button>
+        <h2 class="font-bold">Price:$79.99</h2>
+      </div>
+    </div>
+
+    <div class="bg-amber-50 mt-10 flex justify-around">
+      <h2 id="total-amount">Total:$0.00</h2>
+    </div>
+    <div class="flex mt-10 justify-center items-center">
+      <button
+        id="checkout-btn"
+        class="bg-green-200 text-md p-2.5 rounded-md hover:bg-green-300 transition duration-300 hover:ring-green-600 ring-3 delay-150"
+      >
+        Checkout
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
